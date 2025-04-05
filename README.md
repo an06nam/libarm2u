@@ -28,7 +28,7 @@ The changes within container path $HOME/workspace will affect the workspace dire
     ```bash
     docker run -dit --name libopencm4-toolchain \
        -p  2222:22 \
-       --mount type=bind,source=$(pwd)/Workspace/,target=/home/user/Workspace \
+       --mount type=bind,source=$(pwd)/Workspace/,target=/workspace \
        libopencm4-toolchain
    ```
 
