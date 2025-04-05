@@ -1,0 +1,6 @@
+# .clang-tidy
+Checks: '-*,clang-analyzer-*,modernize-*,performance-*,readability-*'
+WarningsAsErrors: 'clang-analyzer-*'
+HeaderFilterRegex: '.*'
+FormatStyle: file
+

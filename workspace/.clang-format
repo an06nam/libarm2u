@@ -1,0 +1,9 @@
+# .clang-format
+BasedOnStyle: LLVM
+IndentWidth: 8         # The Linux kernel prefers an indent width equivalent to a tab (typically 8 columns).
+TabWidth: 8
+UseTab: Always         # Use tabs for indentation.
+ColumnLimit: 80        # The kernel style often limits lines to 80 columns.
+BreakBeforeBraces: Linux
+AllowShortFunctionsOnASingleLine: false
+
