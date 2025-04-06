@@ -13,7 +13,7 @@ This project is aim to write an open source framework for arm-cortex-m chip from
 1. Clone this repo
    ```bash
    git clone https://github.com/an06nam/libarm2u.git
-   cd libarm2u
+   cd libarm4u
    ```
 2. Install [Docker Engine](https://docs.docker.com/engine/install/) if you on linux
    or you can install [Docker Desktop](https://docs.docker.com/desktop/) if you on mac or windows
@@ -30,13 +30,13 @@ This project is aim to write an open source framework for arm-cortex-m chip from
 5. abuild this image
       NOTE : DEFAULT CONTAINER PASSWORD will be 'root'
    ```bash
-   docker build -t libarm2u -f Dockerfile .
+   docker build -t libarm4u -f Dockerfile .
    ```
 6. Create the container and mount the workspace direcotry
     ```bash
-    docker run -dit --name libarm2u \
+    docker run -dit --name libarm4u \
        -p  2222:22 \
        --mount type=bind,source=$(pwd)/workspace/,target=/workspace \
-       libarm2u
+       libarm4u
    ```
 
