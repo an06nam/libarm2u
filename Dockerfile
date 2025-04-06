@@ -49,7 +49,7 @@ RUN cd /opt/toolchains && \
 	tar xvf *.tar.xz && \
 	mv LLVM-ET-Arm-19.1.5-Linux-x86_64 llvm-arm-19 && \
 	rm *.tar.xz && \
-	echo 'export PATH=$PATH:${TOOLCHAINS}/llvm-arm-19/bin' >> /root/.bashrc
+	echo 'export PATH=$PATH:/opt/toolchains/llvm-arm-19/bin' >> /root/.bashrc
 
 ########################################################################
 # Create user [ for a better user experiece at least for me ]
