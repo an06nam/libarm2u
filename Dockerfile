@@ -51,25 +51,6 @@ RUN cd /opt/toolchains && \
 	rm *.tar.xz && \
 	echo 'export PATH=$PATH:/opt/toolchains/llvm-arm-19/bin' >> /root/.bashrc
 
-########################################################################
-# Create user [ for a better user experiece at least for me ]
-# RUN useradd -ms /bin/bash user && \
-#	usermod -aG sudo user && \
-#	echo 'user:user' | chpasswd
-
-# USER user
-# RUN cd $HOME && \
-#	wget -c https://github.com/ARM-software/LLVM-embedded-toolchain-for-Arm/releases/download/release-19.1.5/LLVM-ET-Arm-19.1.5-Linux-x86_64.tar.xz && \
-#	tar xvf *.tar.xz && \
-#	mv LLVM-ET-Arm-19.1.5-Linux-x86_64 llvm-arm-19 && \
-#	rm *.tar.xz && \
-#	echo 'export PATH=$PATH:$HOME/llvm-arm-19/bin' >> $HOME/.bashrc && \
-#	mkdir Workspace
-
-# USER root
-# Clean up stale packages
-###########################################################################
-
 RUN apt-get clean -y && \
 	apt-get autoremove --purge -y && \
 	rm -rf /var/lib/apt/lists/*
@@ -79,7 +60,7 @@ RUN mkdir -p /var/run/sshd && \
     chmod 0755 /var/run/sshd
 
 # Expose SSH port
-EXPOSE 22
+# EXPOSE 22
 
 # Set Root passworkd
 RUN echo "root:root" | chpasswd
