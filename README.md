@@ -15,7 +15,7 @@ The chip that are present are what I currently have. Hopefully in the future I w
 ## Generate and use the image for Development
 1. Clone this repo
    ```bash
-   git clone https://github.com/an06nam/libarm2u.git
+   git clone https://github.com/an06nam/libarm4u.git
    cd libarm4u
    ```
 2. Install [Docker Engine](https://docs.docker.com/engine/install/) if you on linux
