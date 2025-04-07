@@ -3,6 +3,8 @@ This project is aim to write an open source framework for arm-cortex-m chip from
 
 # Current Suported Chip
 
+The chip that are present are what I currently have. Hopefully in the future I would be able to increase the supported chip / architectures.
+
 | Chip | Architecture | Reference Manual | Status | Boards | Working Features |
 | --- | --- | --- | --- | --- | --- |
 | stm32f0x0 | Cortex-M0 | [RM0360](https://www.st.com/resource/en/reference_manual/rm0360-stm32f030x4x6x8xc-and-stm32f070x6xb-advanced-armbased-32bit-mcus-stmicroelectronics.pdf) | On Progress | [baite dev board](https://stm32-base.org/boards/STM32F030F4P6-Baite.html) | none |
